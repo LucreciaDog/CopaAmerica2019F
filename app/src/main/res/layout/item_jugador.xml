@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/escudo_id"
+            android:layout_width="44dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/nombre_equipo_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de Equipo"/>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent">
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/foto_seleccion_id"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/ic_launcher_round" />
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:padding="5dp"
+                  android:id="@+id/foto_cap_id"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_gravity="center"
+                  android:src="@mipmap/ic_launcher_round"
+                  />
+              <TextView
+                  android:id="@+id/nombre_id"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:text="Lio Messi"
+                  />
+              <TextView
+                  android:id="@+id/numero_id"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:text="12"
+                  />
+              <TextView
+                  android:id="@+id/result_id"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:text="result"/>
+          </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/bnt_qr_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableEnd="@drawable/ic_monochrome_photos_black_24dp"
+            android:drawableRight="@drawable/ic_monochrome_photos_black_24dp"
+            android:text="Code QR"
+            android:background="@color/backgroundfragment"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+</LinearLayout>
